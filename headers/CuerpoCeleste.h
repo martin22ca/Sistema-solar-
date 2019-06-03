@@ -5,25 +5,26 @@ using namespace std;
 class CuerpoCeleste{
 protected:
     string nombre;
+    int color;
     double masa;
     double posX, posY;
-    float velX, velY;
+    double velX, velY;
 public:
     CuerpoCeleste();
-    CuerpoCeleste( string, double, double, double, float, float); // Falta color represent
-    string getNombre();
+    CuerpoCeleste( string, double, double, double, double, double, int);
     double getMasa();
     double getPosX();
     double getPosY();
-    float getVelX();
-    float getVelY();
+    double getVelX();
+    double getVelY();
+    string getNombre();
     void setNombre(string);
     void setMasa(double);
     void setPosX(double);
     void setPosY(double);
-    void setVelX(float);
-    void setVelY(float);
-    double fuerza(CuerpoCeleste&);
+    void setVelX(double);
+    void setVelY(double);
+    double fuerza(CuerpoCeleste);
 
     double velocidad();
     double aceleracion(double);

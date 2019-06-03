@@ -4,7 +4,7 @@
 #include<math.h>
 using namespace std;
 
-CuerpoCeleste::CuerpoCeleste( string n, double m, double px, double py, float vx, float vy)
+CuerpoCeleste::CuerpoCeleste( string n, double m, double px, double py, double vx, double vy, int c)
 {
     nombre=n;
     masa=m;
@@ -12,6 +12,7 @@ CuerpoCeleste::CuerpoCeleste( string n, double m, double px, double py, float vx
     posY=py;
     velX=vx;
     velY=vy;
+    color=c;
 }
 
 string CuerpoCeleste::getNombre()
@@ -34,12 +35,12 @@ double CuerpoCeleste::getPosY()
     return posY;
 }
 
-float CuerpoCeleste::getVelX()
+double CuerpoCeleste::getVelX()
 {
     return velX;
 }
 
-float CuerpoCeleste::getVelY()
+double CuerpoCeleste::getVelY()
 {
     return velY;
 }
@@ -64,17 +65,17 @@ void CuerpoCeleste::setPosY( double py )
     posY=py;
 }
 
-void CuerpoCeleste::setVelX( float vx )
+void CuerpoCeleste::setVelX( double vx )
 {
     velX=vx;
 }
 
-void CuerpoCeleste::setVelY( float vy )
+void CuerpoCeleste::setVelY( double vy )
 {
     velY=vy;
 }
 
-double CuerpoCeleste::fuerza(CuerpoCeleste& b)
+double CuerpoCeleste::fuerza(CuerpoCeleste b)
 {
     double m2=b.getMasa();
     double px2=b.getPosX();
@@ -90,10 +91,10 @@ double CuerpoCeleste::velocidad()
 
 }
 
-double CuerpoCeleste::aceleracion( double fuerza, double m)
+/*double CuerpoCeleste::aceleracion( double fuerza, double m)
 {
     return fuerza/m;
-}
+}*/
 
 
 /*
