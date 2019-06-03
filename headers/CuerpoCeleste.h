@@ -1,3 +1,7 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
 class CuerpoCeleste{
 protected:
     string nombre;
@@ -6,7 +10,7 @@ protected:
     float velX, velY;
 public:
     CuerpoCeleste();
-    CuerpoCeleste( string, double, double, double, float, float);
+    CuerpoCeleste( string, double, double, double, float, float); // Falta color represent
     string getNombre();
     double getMasa();
     double getPosX();
@@ -19,4 +23,9 @@ public:
     void setPosY(double);
     void setVelX(float);
     void setVelY(float);
-}
+    double fuerza(CuerpoCeleste&);
+
+    double velocidad();
+    double aceleracion(double);
+    double posicion(double, double);
+};
