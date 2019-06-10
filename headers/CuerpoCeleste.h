@@ -24,9 +24,9 @@ public:
     void setPosY(double);
     void setVelX(double);
     void setVelY(double);
-    double fuerza(CuerpoCeleste);
-
-    double velocidad();
-    double aceleracion(double);
-    double posicion(double, double);
+    int getColor();
+    //double fuerza(CuerpoCeleste);
+    double Fx(CuerpoCeleste*, int);
+    double Fy(CuerpoCeleste*, int);
+    void mover(CuerpoCeleste*, int, int );
 };

@@ -1,23 +1,27 @@
 # depslib dependency file v1.0
-1559576122 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\cpp\cuerpoceleste.cpp
+1559585287 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\cpp\cuerpoceleste.cpp
 	<string.h>
 	"../headers/CuerpoCeleste.h"
 	<iostream>
 	<math.h>
 
-1559576084 c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\headers\cuerpoceleste.h
+1559585294 c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\headers\cuerpoceleste.h
 	<iostream>
 	<string.h>
 
-1559576160 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\main.cpp
-	"headers/CuerpoCeleste.h"
-	<iostream>
-	<math.h>
+1559585328 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\main.cpp
+	"headers/SistemaSolar.h"
+	<winbgim.h>
 
-1559057640 c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\headers\sistemasolar.h
+1559580525 c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\headers\sistemasolar.h
 	"CuerpoCeleste.h"
 
 1559574803 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\untitled1.cpp
 	<iostream>
 	<fstream>
+
+1559586743 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\cpp\sistemasolar.cpp
+	"../headers/SistemaSolar.h"
+	<conio.h>
+	<winbgim.h>
 
