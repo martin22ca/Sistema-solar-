@@ -6,7 +6,7 @@ SistemaSolar::SistemaSolar(int nm)
     cantMCC=nm;
     cantACP=0;
     CC=new CuerpoCeleste [cantMCC];
-    //fs.open ("../SistemaSolar.txt");
+    fs.open ("Archivo.txt");
 }
 
 void SistemaSolar::addCC(CuerpoCeleste CCA)
@@ -18,29 +18,33 @@ void SistemaSolar::addCC(CuerpoCeleste CCA)
 void SistemaSolar::simular()
 {
     for(int i=0;i<cantACP;i++){
-        CC[i].mover(CC, cantACP, 86400);
-        //cout<<CC[i].getNombre()<<" "<<" "<<CC[i].getPosX()<<" "<<CC[i].getPosY()<<endl;
+        cout<<"hola"<<endl;
+        CC[i].mover(CC, cantACP, 100);
+        cout<<CC[i].getNombre()<<" "<<" "<<CC[i].getPosX()<<" "<<CC[i].getPosY()<<endl;
     }
 }
 
 void SistemaSolar::archivar()
 {
-
+    for(int i=0;i<15;i++){
+        fs<<CC[i].getNombre()<<" "<<CC[i].getPosX()<<" "<<CC[i].getPosY()<<endl;
+    }
 }
+
 
 void SistemaSolar::graficar()
 {
     for(int i=0;i<cantACP;i++){
-        double x=CC[i].getPosX();
-        double y=CC[i].getPosY();
-        int c=CC[i].getColor();
-        int x1 = int (x);
-        int y1 = int (y);
-        putpixel(x1,y1,c);
+        int x= (int) (CC[i].getPosX()/10e09);
+        int y= (int) (CC[i].getPosY()/10e09);
+        int m= (int) (CC[i].getMasa()/10e09);
+        setcolor(CC[i].getColor());
+        circle(x+600,y+400,100);
     }
 }
 
 SistemaSolar::~SistemaSolar()
 {
-
+    fs.close();
+    delete [] CC;
 }

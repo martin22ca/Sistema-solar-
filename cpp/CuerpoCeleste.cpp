@@ -2,6 +2,8 @@
 #include "../headers/CuerpoCeleste.h"
 #include<iostream>
 #include<math.h>
+#include<cstring>
+
 using namespace std;
 
 
@@ -27,11 +29,13 @@ CuerpoCeleste::CuerpoCeleste( string n, double m, double px, double py, double v
     color=c;
 }
 
-string CuerpoCeleste::getNombre()
+char* CuerpoCeleste::getNombre()
 {
-    return nombre;
+    char cstr[nombre.size() + 1];
+	nombre.copy(cstr, nombre.size() + 1);
+	cstr[nombre.size()] = '\0';
+    return cstr;
 }
-
 double CuerpoCeleste::getMasa()
 {
     return masa;
@@ -86,18 +90,6 @@ void CuerpoCeleste::setVelY( double vy )
 {
     velY=vy;
 }
-/*
-void CuerpoCeleste::fuerza(CuerpoCeleste b)
-{
-    double m2=b.getMasa();
-    double px2=b.getPosX();
-    double py2=b.getPosY();
-    double dX=pow(px2-posX,2);
-    double dY=pow(py2-posY,2);
-    double distance=sqrt(dX+dY);
-    return (((6.674e-11)*(masa*m2))/(pow(distance,2)));
-}*/
-
 double CuerpoCeleste::Fx(CuerpoCeleste* cc, int n)
 {
     double fx=0;

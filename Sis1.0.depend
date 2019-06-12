@@ -1,27 +1,28 @@
 # depslib dependency file v1.0
-1559585287 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\cpp\cuerpoceleste.cpp
+1560186524 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\cpp\cuerpoceleste.cpp
 	<string.h>
 	"../headers/CuerpoCeleste.h"
 	<iostream>
 	<math.h>
+	<cstring>
 
-1559585294 c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\headers\cuerpoceleste.h
+1560177633 c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\headers\cuerpoceleste.h
 	<iostream>
 	<string.h>
 
-1559585328 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\main.cpp
+1560187216 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\main.cpp
 	"headers/SistemaSolar.h"
 	<winbgim.h>
 
-1559580525 c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\headers\sistemasolar.h
+1560182110 c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\headers\sistemasolar.h
 	"CuerpoCeleste.h"
+	<fstream>
 
 1559574803 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\untitled1.cpp
 	<iostream>
 	<fstream>
 
-1559586743 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\cpp\sistemasolar.cpp
+1560187005 source:c:\users\agustin\desktop\universidad\segundo año\programacion ii\practicos c++\practico iv\sis1.0\cpp\sistemasolar.cpp
 	"../headers/SistemaSolar.h"
-	<conio.h>
 	<winbgim.h>
 

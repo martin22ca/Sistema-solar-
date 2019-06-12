@@ -4,6 +4,7 @@
 int main()
 {
     SistemaSolar ss(9); //sistema solar con un máximo de 9 cuerpos
+
     //Se crean los cuerpos celestes con nombre, masa, posición x, posición y,
     //velocidad en x, velocidad en y, color de representacion
     CuerpoCeleste sol("Sol",1.98e30, 0., 0.,0., 0., 15);
@@ -21,26 +22,30 @@ int main()
     ss.addCC(marte);
     ss.addCC(jupiter);
     ss.addCC(saturno);
-    initwindow (1200,1200); //inicializa modo grafico
-    setcolor(sol.getColor());
-//    outtextxy (0,0,sol.getNombre());
-    setcolor(mercurio.getColor());
- //   outtextxy (0,30,mercurio.getNombre());
-    setcolor(venus.getColor());
- //   outtextxy (0,60,venus.getNombre());
-    setcolor(tierra.getColor());
- //   outtextxy (0,90,tierra.getNombre());
-    setcolor(marte.getColor());
- //   outtextxy (0,120,marte.getNombre());
-    setcolor(jupiter.getColor());
- //   outtextxy (0,150,jupiter.getNombre());
-    setcolor(saturno.getColor());
- //   outtextxy (0,180,saturno.getNombre());
 
+    /*initwindow (1200,1200); //inicializa modo graficoç
+    setcolor(sol.getColor());
+    outtextxy (0,0,sol.getNombre());
+    setcolor(mercurio.getColor());
+    outtextxy (0,30,mercurio.getNombre());
+    setcolor(venus.getColor());
+    outtextxy (0,60,venus.getNombre());
+    setcolor(tierra.getColor());
+    outtextxy (0,90,tierra.getNombre());
+    setcolor(marte.getColor());
+    outtextxy (0,120,marte.getNombre());
+    setcolor(jupiter.getColor());
+    outtextxy (0,150,jupiter.getNombre());
+    setcolor(saturno.getColor());
+    outtextxy (0,180,saturno.getNombre());
+*/
     //evolucion del sistema durante 20 años terrestres.
-    for (int dia=1;dia<=20*365;dia++){
+
+    for (int i=1;i<=7300;i++){
         ss.simular();
         ss.archivar();
-        ss.graficar();
+        //ss.graficar();
+
     }
+
 }

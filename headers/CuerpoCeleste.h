@@ -17,7 +17,7 @@ public:
     double getPosY();
     double getVelX();
     double getVelY();
-    string getNombre();
+    char* getNombre();
     void setNombre(string);
     void setMasa(double);
     void setPosX(double);
